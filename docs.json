@@ -1,0 +1,83 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Mint Starter Kit",
+  "colors": {
+    "primary": "#4D6EFF",
+    "light": "#4D6EFF",
+    "dark": "#4D6EFF"
+  },
+  "favicon": "favicon.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction/overview",
+              "introduction/climate",
+              "introduction/cbam",
+              "introduction/purpose"
+            ]
+          },
+          {
+            "group": "Quick Start",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "development"
+            ]
+          }
+          
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "General",
+            "openapi": {
+              "source": "api-reference/general.json",
+              "directory": "api-reference"
+            }
+          },
+          {
+            "group": "EU CBAM",
+            "openapi": {
+              "source": "api-reference/openapi.json",
+              "directory": "api-reference"
+            }
+          }
+          
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/logo-light.svg",
+    "dark": "/logo/logo-dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:hi@mintlify.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  }
+
+}
